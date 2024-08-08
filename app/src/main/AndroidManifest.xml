@@ -33,7 +33,7 @@
         <activity
             android:name=".Home"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.DayNight" />
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

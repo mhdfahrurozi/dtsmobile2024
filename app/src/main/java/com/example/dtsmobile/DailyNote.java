@@ -22,7 +22,7 @@ public class DailyNote extends AppCompatActivity {
     private ListView listView;
     private FloatingActionButton fab;
     private EditText etSearch;
-    private DatabaseHelper2 dbHelper;
+    private DatabaseHelper dbHelper;
     private List<Note> notesList;
     private ArrayAdapter<String> adapter;
     private List<String> titlesList;
@@ -33,7 +33,7 @@ public class DailyNote extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         fab = findViewById(R.id.fab);
         etSearch = findViewById(R.id.etSearch);
-        dbHelper = new DatabaseHelper2(this);
+        dbHelper = new DatabaseHelper(this);
         notesList = new ArrayList<>();
         titlesList = new ArrayList<>();
         fab.setOnClickListener(new View.OnClickListener() {

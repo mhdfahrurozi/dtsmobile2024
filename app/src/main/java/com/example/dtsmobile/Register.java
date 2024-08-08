@@ -32,7 +32,7 @@ public class Register extends AppCompatActivity {
                 String password = etRegPassword.getText().toString();
                 Boolean checkEmail = db.checkEmail(email);
                 if (checkEmail == false) {
-                    Boolean insert = db.insert(email, password);
+                    Boolean insert = db.insertUser(email, password);
                     if (insert == true) {
                         Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(Register.this, LoginRegister.class);

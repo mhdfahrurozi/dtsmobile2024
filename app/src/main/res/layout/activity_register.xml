@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="30dp"
+tools:context=".LoginRegister">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="238dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logos" />
+
+    <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_below="@id/imageView"
+    android:textColor="@android:color/black"
+    android:text="Email" />
+
+<EditText
+    android:id="@+id/etRegEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView3"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:background="@drawable/edit_text_border"
+    android:hint="Enter your email or phone number" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/etRegEmail"
+    android:textColor="@android:color/black"
+    android:text="Password" />
+
+<EditText
+    android:id="@+id/etRegPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView4"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:inputType="textPassword"
+    android:background="@drawable/edit_text_border"
+    android:hint="Enter your Password" />
+
+<Button
+    android:id="@+id/btnRegRegister"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="25dp"
+    android:layout_below="@id/etRegPassword"
+    android:backgroundTint="#005CD6"
+    android:text="Register" />
+</RelativeLayout>
